@@ -1,0 +1,14 @@
+<?php
+
+use App\Http\Controllers\Admin\ContributionController;
+use Illuminate\Support\Facades\Route;
+
+Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+
+    Route::resource('contributions', ContributionController::class);
+    Route::post('contributions/{id}/approve', [ContributionController::class, 'approve'])->name('contributions.approve');
+    Route::post('contributions/{id}/reject', [ContributionController::class, 'reject'])->name('contributions.reject');
+});
