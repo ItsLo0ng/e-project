@@ -16,3 +16,6 @@ Route::middleware('auth')->group(function () {
 
 // Import auth từ Breeze
 require __DIR__.'/auth.php';
+
+
+Route::view('/about', 'pages.about') ->name('about');

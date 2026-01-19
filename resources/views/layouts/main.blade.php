@@ -50,6 +50,13 @@
                     @else
                         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Đăng nhập</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Đăng ký</a></li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link {{ Route::currentRouteNamed('about') ? 'active' : '' }}" 
+                            href="{{ route('about') }}">Giới thiệu</a>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about') }}">About us</a>  
+                        </li>
                     @endauth
                 </ul>
             </div>
