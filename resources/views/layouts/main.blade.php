@@ -6,7 +6,7 @@
     <title>Scratchy Nib</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     <style>
         body { background: #fff; color: #333; font-family: 'Playfair Display', serif; }
         .navbar-brand { font-family: 'Great Vibes', cursive; font-size: 2.8rem; color: #c9a96e !important; }
@@ -15,6 +15,7 @@
         @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
     </style>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
         <div class="container">
